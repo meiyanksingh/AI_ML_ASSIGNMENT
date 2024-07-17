@@ -29,17 +29,16 @@ The application follows these steps to provide responses to your questions:
 ## Performance Evaluation Results
 
 ### Text Extraction Speed
-- Average extraction time: 1.2 seconds per PDF 
+- Average extraction time: 0.17 seconds per PDF 
 
 ### Embedding Generation Time
 - Average generation time: 0.5 seconds per text chunk .
 
 ### Storage and Retrieval Time
-- Storage time: 0.8 seconds per 1000 embeddings.
-- Retrieval time: 0.3 seconds per query.
+- 2.17 Seconds
 
 ### Query Response Time
-- Average response time: 1.5 seconds per query.
+- Average response time: 3.04 seconds per query.
 
 ### Accuracy
 - Precision: 0.85
@@ -48,9 +47,7 @@ The application follows these steps to provide responses to your questions:
 ### Scalability
 - System can handle up to 10 concurrent users with an average response time increase of 0.5 seconds.
 
-### Resource Usage
-- CPU Usage: 50% on average during peak load.
-- Memory Usage: 65% on average during peak load.
+
 
 
 
