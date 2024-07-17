@@ -47,8 +47,35 @@ The application follows these steps to provide responses to your questions:
 ### Scalability
 - System can handle up to 10 concurrent users with an average response time increase of 0.5 seconds.
 
+### Security
+Ensuring security in the development and deployment of a QA bot involves multiple layers, including secure handling of data, safeguarding the system against unauthorized access, and maintaining the integrity and confidentiality of the queries and results. Here are some key strategies to enhance the security of your QA bot system
 
+1. Secure Data Handling
+Encryption: Encrypt PDF files, embeddings, and other sensitive data at rest and in transit.
+Use libraries like cryptography for encryption.
+Secure Storage: Store encryption keys securely, using services like AWS KMS or Azure Key Vault.
 
+2. Authentication and Authorization
+API Authentication: Use OAuth2, JWT, or API keys for securing API endpoints.
+Role-Based Access Control (RBAC): Implement RBAC to ensure that users have appropriate permissions.
 
+3. Network Security
+HTTPS: Use HTTPS to encrypt data in transit.
+Firewall and VPC: Use firewalls and Virtual Private Clouds (VPC) to restrict access to your servers.
 
+4. Input Validation and Sanitization
+Validate User Input: Ensure that user inputs are properly validated to prevent injection attacks (e.g., SQL injection, XSS).
+Sanitize Inputs: Use libraries like bleach for sanitizing text inputs.
+
+5. Regular Audits and Monitoring
+Audit Logs: Maintain logs of all access and actions within the system for audit purposes.
+Monitoring: Use monitoring tools to detect unusual activities and potential security breaches.
+
+6. Secure Code Practices
+Dependency Management: Regularly update dependencies to fix known vulnerabilities.
+Static and Dynamic Analysis: Use tools like bandit for static code analysis and dynamic analysis tools for runtime checks.
+
+7. Secure Deployment
+Container Security: Use container security practices if deploying with Docker/Kubernetes (e.g., scanning images for vulnerabilities).
+Least Privilege Principle: Ensure that services run with the least privileges required.
 
